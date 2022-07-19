@@ -1,0 +1,2 @@
+class Partenaire < ApplicationRecord
+end
