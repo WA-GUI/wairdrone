@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  height: 120px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -8,5 +9,22 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 130px;
+  height: 40px;
+}
+
+.nav-item  {
+  background-color: white;
+  border: 4px dashed white;
+  font-size: 1rem;
+  font-family: 'Fira Sans';
+  color:#FFCD01;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #00000076;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: rgb(0, 0, 0);
 }
