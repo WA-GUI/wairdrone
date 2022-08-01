@@ -1,7 +1,7 @@
 <div class = "favorite", data-id="<%= service.id %>" >
   <div class="visite-index service">
     <div class="img-visite">
-      <%= cl_image_tag service.photos.first.key, class: "img-card", size: "377x280"%>
+      <%= cl_image_tag @service.photos.key, class: "img-card", size: "377x280"%>
     </div>
     <div class="description-index">
       <h2 style="text-decoration:none;"><%= service.name %></h2><br>
