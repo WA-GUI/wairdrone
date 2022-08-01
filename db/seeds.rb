@@ -12,9 +12,16 @@ puts 'Destroy services done'
 
 puts 'Create services'
 
-Service.create(name: 'Thermographie bâtiments', description:
-  "La thermographie met en évidence les irrégularités dans l'isolation thermique des parois ou des toitures, identifie les ponts thermiques, détecte les défauts d'étanchéité à l'air, relève les infiltrations d'eau ou la présence d'humidité et, plus généralement, pointe du doigt tout ce qui relève de l'inconfort thermique.", price_1: 3, price_2: 2, price_3: 0.94, photo_principal: '#', photo_2: '#', photo_3: '#', photo_4: '#', photo_5: '#')
-Service.create(name: 'Thermographie photovoltaïque', description:"Le drone est le moyen le plus rapide et le plus économique pour contrôler et diagnostiquer les panneaux photovoltaïques par thermographie, en réalisant des images thermiques.", price_1: 3, price_2: 2, price_3: 0.94, photo_principal: '#', photo_2: '#', photo_3: '#', photo_4: '#', photo_5: '#')
-Service.create(name: 'Photogrammétrie', description:"La solution WAIRDRONE pour la documentation de vos projets et pour le suivi de chantier !", price_1: 3, price_2: 2, price_3: 0.94, photo_principal: '#', photo_2: '#', photo_3: '#', photo_4: '#', photo_5: '#')
+thermographie_bâtiment = Service.create!(name: 'Thermographie bâtiments', description:
+"La thermographie met en évidence les irrégularités dans l'isolation thermique des parois ou des toitures, identifie les ponts thermiques, détecte les défauts d'étanchéité à l'air, relève les infiltrations d'eau ou la présence d'humidité et, plus généralement, pointe du doigt tout ce qui relève de l'inconfort thermique.", Captation: 2.20, Traitement: 1.80, Déplacement: 0.94)
+photo_principal = URI.open('https://res.cloudinary.com/wagui/image/upload/v1659360760/wairdrone/Thermographie/Thermo_1_uzb1od.jpg')
+thermographie_bâtiment.photos.attach(io: photo_principal, filename: 'thermographie_bâtiment.jpg', content_type: 'image/jpg')
+
+
+Service.create(name: 'Thermographie photovoltaïque', description:"Le drone est le moyen le plus rapide et le plus économique pour contrôler et diagnostiquer les panneaux photovoltaïques par thermographie, en réalisant des images thermiques.", Captation: 2.20, Traitement: 1.80, Déplacement: 0.94, photo_principal: '#', photo_2: '#', photo_3: '#', photo_4: '#', photo_5: '#')
+
+
+Service.create(name: 'Photogrammétrie', description:"La solution WAIRDRONE pour la documentation de vos projets et pour le suivi de chantier !", Captation: 0.28, Traitement: 0.12, Déplacement: 0.94, photo_principal: '#', photo_2: '#', photo_3: '#', photo_4: '#', photo_5: '#')
 
 puts "#{Service.count} services created"
+

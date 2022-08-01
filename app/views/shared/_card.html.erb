@@ -1,0 +1,11 @@
+<div class = "favorite", data-id="<%= service.id %>" >
+  <div class="visite-index service">
+    <div class="img-visite">
+      <%= cl_image_tag service.photos_principal, class: "img-card", size: "377x280"%>
+    </div>
+    <div class="description-index">
+      <h2 style="text-decoration:none;"><%= service.name %></h2><br>
+      <p style="text-decoration:none;"><%= service.description %></p>
+    </div>
+  </div>
+</div>

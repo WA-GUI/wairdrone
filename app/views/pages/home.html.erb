@@ -7,13 +7,44 @@
 </div>
 <div class="home_intro">
     <div class="home_intro_img"  style="height: 130px">
-        <%= image_tag "gg_avatar"%>    
+        <%= image_tag "gg_avatar"%>
     </div>
     <div class="home_intro_text">
         <p>"Nous proposons des captations dans le spectre non visible (<strong>thermographie bâtiment</strong> ou <strong>thermographie photovoltaïque</strong>) et dans le spectre visible (<strong>photogrammétrie</strong>) aux professionnels du bâtiment afin d'alimenter leurs projets.
         <br>
-        Que vous soyez un architecte, un bureau d'étude, un géomètre ou topographe, un thermicien, un maître d'œuvre, chef de chantier ou assureur, <strong>WAIRDRONE</strong> peut vous apporter son <strong>expertise avec sécurité, rapidité et précision</strong>."
+        Que vous soyez un architecte, un bureau d'étude, un géomètre ou topographe, un thermicien, un maître d'œuvre, chef de chantier ou assureur,<br> <strong>WAIRDRONE</strong> peut vous apporter son <strong>expertise avec sécurité, rapidité et précision</strong>."
         <br>
         - Guillaume Genet</p>
     </div>
+</div>
+<div class="banner">
+    <div class="banner-img-btn">
+        <div class="banner-img">
+            <%= image_tag "banner_home_2", class: "banner"%>
+        </div>
+    </div>
+</div>
+<div class="home_services">
+  <div>
+      <div class="home_services_img_1"  style="height: 130px">
+          <%= image_tag "drone_dessus_avatar"%>
+      </div>
+      <div class="home_services_text">
+          <p><strong>NOS SERVICES :<strong></p>
+      </div>
+      <div class="home_services_img_2"  style="height: 130px">
+          <%= image_tag "drone_dessus_avatar"%>
+      </div>
+  </div>
+  <div>
+
+    <div class="card-container">
+      <% @services.each do |service| %>
+        <div>
+          <%= render 'shared/card', service: service %>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
 </div>
