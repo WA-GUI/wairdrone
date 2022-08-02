@@ -1,11 +1,15 @@
 .visite-index {
-  background-color:#F2BE1B;
+  background-color:#d1d0cd;
   height: 544px;
   width: 377px;
   border-radius: 6px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.471);
+
 }
 
+.visite-index:hover {
+    background-color:white;
+  }
 
 .description-index {
   text-align: center;
