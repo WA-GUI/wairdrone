@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_01_142311) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_03_210230) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -59,6 +59,16 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_01_142311) do
     t.float "Captation"
     t.float "Traitement"
     t.float "Déplacement"
+    t.text "infos1"
+    t.text "infos2"
+    t.text "infos3"
+    t.text "infos4"
+    t.text "infos5"
+    t.text "infos6"
+    t.text "infos7"
+    t.text "infos8"
+    t.text "infos9"
+    t.text "infos10"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
