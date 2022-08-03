@@ -1,29 +1,48 @@
-.visite-index {
-  background-color:#d1d0cd;
-  height: 544px;
-  width: 377px;
-  border-radius: 6px;
+.card-content {
+  background-color:black;
+  height: 262px;
+  width: 339px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.471);
 
 }
 
-.visite-index:hover {
-    background-color:white;
+.card-content:hover {
+    background-color: white;
   }
 
-.description-index {
+.card-text {
+  padding-top: 10px;
   text-align: center;
   color: black;
   height: 200px;
   margin-left: 10px;
   margin-right: 10px;
-
-h2 {
-  font-size: 36px;
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px
+  }
 }
 
-p {
-  font-size: 14px
-}
+.card-img {
+  padding-top: 1px;
+  padding-left: 1px;
 
 }
+
+.grayscale img:hover  {
+
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+  -webkit-transition:all 0.3s;
+  transition:all 0.3s;
+
+  }
+
+  .grayscale img{
+
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+
+  }
