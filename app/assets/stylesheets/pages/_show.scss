@@ -33,3 +33,20 @@
   opacity: 1;
   background-color: white;
 }
+
+.container-show {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-text {
+  padding: 30px;
+}
+
+.container-img {
+  padding: 30px;
+  & img {
+    padding: 10px 0px;
+  }
+}
