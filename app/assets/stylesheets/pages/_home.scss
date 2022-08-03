@@ -25,12 +25,16 @@
   }
 }
 
+.home-title {
+  padding-left: 30px;
+  font-size: 20px;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 50px;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -69,4 +73,39 @@
 .btn-ghost:hover {
   opacity: 1;
   background-color: white;
+}
+
+.banner-img3 {
+  display: flex;
+  width: 100%;
+  & .banner3 {
+      width: 100%;
+  }
+}
+
+.grayscale img:hover  {
+
+  -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+  -webkit-transition:all 0.3s;
+  transition:all 0.3s;
+
+}
+
+.grayscale img{
+
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+
+}
+
+#site-title {
+  font-size: 24px;
+}
+
+.site-title-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

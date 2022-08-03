@@ -5,21 +5,27 @@
     <a class="btn btn-ghost" href="#">Simulation devis</a>
   </div>
 </div>
-
+<div class="site-title-container" style="display: flex">
+  <%= image_tag "WAIRDRONE 2022 BLACK 3", size: "200x65"%>
+  <h1 id="site-title">WAIRDRONE</h1>
+  <%= image_tag "WAIRDRONE 2022 BLACK 3", size: "200x65"%>
+</div>
 <div class="home_intro">
-    <div class="home_intro_img"  style="height: 130px">
-        <%= image_tag "gg_avatar"%>
-    </div>
-    <div class="home_intro_text">
-        <p>"Nous proposons des captations dans le spectre non visible (<strong>thermographie bâtiment</strong> ou <strong>thermographie photovoltaïque</strong>) et dans le spectre visible (<strong>photogrammétrie</strong>) aux professionnels du bâtiment afin d'alimenter leurs projets.
-        <br>
-        Que vous soyez un architecte, un bureau d'étude, un géomètre ou topographe, un thermicien, un maître d'œuvre, chef de chantier ou assureur,<br> <strong>WAIRDRONE</strong> peut vous apporter son <strong>expertise avec sécurité, rapidité et précision</strong>."
-        <br><br>
-        - Guillaume Genet</p>
-    </div>
+  <div class="home_intro_img"  style="height: 130px">
+    <%= image_tag "gg_avatar"%>
+  </div>
+  <div class="home_intro_text">
+    <p>"Nous proposons des captations dans le spectre non visible (<strong>thermographie bâtiment</strong> ou <strong>thermographie photovoltaïque</strong>) et dans le spectre visible (<strong>photogrammétrie</strong>) aux professionnels du bâtiment afin d'alimenter leurs projets.
+    <br>
+    Que vous soyez un architecte, un bureau d'étude, un géomètre ou topographe, un thermicien, un maître d'œuvre, chef de chantier ou assureur,<br> <strong>WAIRDRONE</strong> peut vous apporter son <strong>expertise avec sécurité, rapidité et précision</strong>."
+    <br><br>
+    - Guillaume Genet</p>
+  </div>
 </div>
 <div>
   <div>
+  <h3 class="home-title">
+  NOS SERVICES :</h3>
     <div class="card-container" style="text-decoration: none">
       <% @services.each do |service| %>
         <%= link_to service_path(service) do%>
@@ -63,11 +69,14 @@
       </p>
     </div>
 </div>
+<div class="banner3">
+  <div class="banner-img3 grayscale">
+    <%= image_tag "banner_confiance", class: "banner3"%>
+  </div>
+</div>
+<br>
 <div class="banner2">
   <div class="banner-img">
     <%= image_tag "banner_home_2", class: "banner2"%>
   </div>
-</div>
-<div>
-  <%= render 'shared/footer' %>
 </div>
