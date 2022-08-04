@@ -50,3 +50,16 @@
     padding: 10px 0px;
   }
 }
+
+.carroussel {
+  align-items: center;
+  padding: 20px
+}
+
+.logo {
+  align-items: center;
+  & img {
+    width: 100%;
+    height: 200px;
+  }
+}
