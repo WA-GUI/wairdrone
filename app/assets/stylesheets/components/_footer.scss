@@ -69,4 +69,16 @@
 .footer-copyright {
   font-size: 12px;
   text-decoration: none;
+  & a {
+    text-decoration: none;
+    color: black;
+    opacity: 0.50;
+  }
+  & p {
+    padding-top: 10px;
+  }
+}
+
+.footer-copyright a:hover {
+  opacity: 1;
 }

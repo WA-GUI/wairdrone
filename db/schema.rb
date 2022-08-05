@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_04_095516) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_05_144123) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -40,6 +40,45 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_04_095516) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "condition_generales_ventes", force: :cascade do |t|
+    t.string "name"
+    t.text "intro"
+    t.text "condition1"
+    t.text "condition2"
+    t.text "condition3"
+    t.text "condition4"
+    t.text "condition5"
+    t.text "condition6"
+    t.text "condition7"
+    t.text "condition8"
+    t.text "condition9"
+    t.text "condition10"
+    t.text "condition11"
+    t.text "condition12"
+    t.text "condition13"
+    t.text "condition14"
+    t.text "condition15"
+    t.text "condition16"
+    t.text "condition17"
+    t.text "condition18"
+    t.text "condition19"
+    t.text "condition20"
+    t.text "condition21"
+    t.text "condition22"
+    t.text "condition23"
+    t.text "condition24"
+    t.text "condition25"
+    t.text "condition26"
+    t.text "condition27"
+    t.text "condition28"
+    t.text "condition29"
+    t.text "condition30"
+    t.text "condition31"
+    t.text "condition32"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "partenaires", force: :cascade do |t|
