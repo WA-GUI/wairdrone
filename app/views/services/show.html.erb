@@ -2,7 +2,7 @@
   <div class="container">
     <h2><strong><%= @service.name.upcase %></strong></h2>
     <p><%= @service.description %></p>
-    <a class="btn btn-ghost" href="/services">Simulation devis</a>
+    <a class="btn btn-ghost" href="/services">TARIFS</a>
   </div>
 </div>
 
@@ -41,7 +41,7 @@
   <div class="container-show">
     <div class="container-text">
       <p><%= @service.infos3 %></p>
-      <a class="btn btn-ghost" href="/services">Simulation devis</a>
+      <a class="btn btn-ghost" href="/services">TARIFS</a>
     </div>
     <div class="container-img">
       <%= cl_image_tag @service.photos[15].key, class: "img-card", size: "600x450", :crop => :fill %>
@@ -78,7 +78,7 @@
     </div>
     <div class="container-text i7">
       <p><%= @service.infos7 %></p>
-      <a class="btn btn-ghost" href="/services">Simulation devis</a>
+      <a class="btn btn-ghost" href="/services">TARIFS</a>
     </div>
     <div class="container-text">
       <%= image_tag "WAIRDRONE 2022 BLACK 3", size: "200x65"%>

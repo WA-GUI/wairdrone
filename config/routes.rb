@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   resources :services, only: [:index, :show]
   resources :conditionsgeneralesventes, only: [:index]
+  resources :contacts, only: [:index]
 end
