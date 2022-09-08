@@ -9,8 +9,8 @@
 
 .home_intro {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;
   height: 350px;
   align-items: center;
   & .home_intro_img {
@@ -20,6 +20,7 @@
   }
   & .home_intro_text {
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
   }
