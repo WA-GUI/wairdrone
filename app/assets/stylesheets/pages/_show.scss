@@ -46,7 +46,7 @@
 }
 
 .container-img {
-  padding: 30px;
+  padding: 10px;
   & img {
     padding: 10px 0px;
   }
@@ -67,12 +67,11 @@
 
 .i7 {
   text-align: center;
-}
-
-.services-container {
-  max-width: 100%;
+  & .btn-ghost {
+    text-align: center;
+  }
 }
 
 .row {
-  max-width: 100%;
+  text-align: center;
 }
