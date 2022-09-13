@@ -6,7 +6,7 @@
   </div>
 </div>
 
-<div data-id="<%= @service.id %>" class="services-container">
+< data-id="<%= @service.id %>" class="services-container">
   <div class="logo">
     <%= cl_image_tag @service.photos.last.key, class: "img-card", size: "400x300"%>
   </div>
@@ -22,23 +22,6 @@
       </div>
       <div class="container-img col">
         <%= cl_image_tag @service.photos[3].key, class: "img-card", size: "300x225", :crop => :fill %>
-      </div>
-    </div>
-  </div>
-  <div class="container-show grayscale">
-    <div class="row" style="align-items: center;">
-      <div class="carroussel col">
-        <%= cl_image_tag @service.photos[4].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[5].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[6].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[7].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[8].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[9].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[10].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[11].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[12].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[13].key, size: "120x500", :crop => :fill %>
-        <%= cl_image_tag @service.photos[14].key, size: "120x500", :crop => :fill %>
       </div>
     </div>
   </div>
@@ -110,6 +93,7 @@
         <%= cl_image_tag @service.photos[6].key, class: "img-card", size: "300x225", :crop => :fill %>
       </div>
     </div>
+  </div>
   <div class="container-show grayscale">
     <div class="row" style="align-items: center;">
       <div class="container-text col">
@@ -117,12 +101,4 @@
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-</div>
 </div>
