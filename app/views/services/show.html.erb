@@ -6,25 +6,25 @@
   </div>
 </div>
 
-<div data-id="<%= @service.id %>" class="grayscale">
+<div data-id="<%= @service.id %>" class="services-container">
   <div class="logo">
     <%= cl_image_tag @service.photos.last.key, class: "img-card", size: "400x300"%>
   </div>
-  <div class="container-show">
-    <div class="container-img">
+  <div class="container-show grayscale row">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[1].key, class: "img-card", size: "200x150"%>
       <%= cl_image_tag @service.photos[2].key, class: "img-card", size: "200x150"%>
     </div>
-    <div class="container-text">
+    <div class="container-text col">
       <p><%= @service.infos1 %></p>
       <p><%= @service.infos2 %></p>
     </div>
-    <div class="container-img">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[3].key, class: "img-card", size: "400x300", :crop => :fill %>
     </div>
   </div>
-  <div class="container-show">
-    <div class="carroussel">
+  <div class="container-show grayscale row">
+    <div class="carroussel col">
       <%= cl_image_tag @service.photos[4].key, class: "img-card", size: "120x500", :crop => :fill%>
       <%= cl_image_tag @service.photos[5].key, class: "img-card", size: "120x500", :crop => :fill%>
       <%= cl_image_tag @service.photos[6].key, class: "img-card", size: "120x500", :crop => :fill%>
@@ -38,67 +38,67 @@
       <%= cl_image_tag @service.photos[14].key, class: "img-card", size: "120x500", :crop => :fill%>
     </div>
   </div>
-  <div class="container-show">
-    <div class="container-text">
+  <div class="container-show grayscale row">
+    <div class="container-text col">
       <p><%= @service.infos3 %></p>
       <a class="btn btn-ghost" href="/services">TARIFS</a>
     </div>
-    <div class="container-img">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[15].key, class: "img-card", size: "600x450", :crop => :fill %>
     </div>
   </div>
-  <div class="container-show">
-    <div class="container-img">
+  <div class="container-show grayscale row">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[12].key, class: "img-card", size: "400x300", :crop => :fill %>
     </div>
-    <div class="container-img">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[17].key, class: "img-card", size: "400x300", :crop => :fill %>
     </div>
-    <div class="container-text">
+    <div class="container-text col">
       <p><%= @service.infos4 %></p>
     </div>
   </div>
-  <div class="container-show">
-    <div class="container-text">
+  <div class="container-show grayscale row">
+    <div class="container-text col">
       <p><%= @service.infos5 %></p>
     </div>
-    <div class="container-img">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[19].key, class: "img-card", size: "400x300", :crop => :fill %>
     </div>
-    <div class="container-text">
+    <div class="container-text col">
       <p><%= @service.infos6 %></p>
     </div>
-    <div class="container-img">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[18].key, class: "img-card", size: "400x300", :crop => :fill %>
     </div>
   </div>
-  <div class="container-show">
-    <div class="container-text">
+  <div class="container-show grayscale row">
+    <div class="container-text col">
       <%= image_tag "WAIRDRONE 2022 BLACK 3", size: "200x65"%>
     </div>
-    <div class="container-text i7">
+    <div class="container-text i7 col">
       <p><%= @service.infos7 %></p>
       <a class="btn btn-ghost" href="/services">TARIFS</a>
     </div>
-    <div class="container-text">
+    <div class="container-text col">
       <%= image_tag "WAIRDRONE 2022 BLACK 3", size: "200x65"%>
     </div>
   </div>
-  <div class="container-show">
-    <div class="container-img">
+  <div class="container-show grayscale row">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[4].key, class: "img-card", size: "200x150", :crop => :fill%>
       <%= cl_image_tag @service.photos[5].key, class: "img-card", size: "200x150", :crop => :fill%>
     </div>
-    <div class="container-text">
+    <div class="container-text col">
       <p><%= @service.infos8 %></p>
       <p><%= @service.infos9 %></p>
     </div>
-    <div class="container-img">
+    <div class="container-img col">
       <%= cl_image_tag @service.photos[6].key, class: "img-card", size: "400x300", :crop => :fill %>
     </div>
   </div>
-  <div class="container-show">
-    <div class="container-text">
+  <div class="container-show grayscale row">
+    <div class="container-text col">
       <p><%= @service.infos10 %></p>
     </div>
   </div>

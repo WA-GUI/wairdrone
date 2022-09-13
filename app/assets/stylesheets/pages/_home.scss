@@ -51,6 +51,12 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
+  transition: 0.2s;
+}
+
+.banner h2:hover{
+  color: #FFCE00;
+  transition: 0.2s;
 }
 
 .banner p {
@@ -58,6 +64,12 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  transition: 0.2s;
+}
+
+.banner p:hover{
+  color: #FFCE00;
+  transition: 0.2s;
 }
 
 .btn-ghost {
