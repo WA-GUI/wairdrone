@@ -6,7 +6,7 @@
   </div>
 </div>
 
-< data-id="<%= @service.id %>" class="services-container">
+<div data-id="<%= @service.id %>" class="services-container">
   <div class="logo">
     <%= cl_image_tag @service.photos.last.key, class: "img-card", size: "400x300"%>
   </div>
@@ -101,4 +101,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>
