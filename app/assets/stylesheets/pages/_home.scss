@@ -7,34 +7,22 @@
   }
 }
 
-.home_intro {
-  display: flex;
+.container-home {
+  margin-top: 50px;
+}
+
+.container-home-2 {
   margin-top: 150px;
-  margin-bottom: 150px;
-  height: 350px;
-  align-items: center;
-  & .home_intro_img {
-    text-align: center;
-    height: 130px;
-    margin-top: 50px;
-    margin-left: 15px;
-  }
-  & .home_intro_text {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
-  }
 }
 
 .home-title {
-  padding-left: 30px;
-  font-size: 20px;
+  margin-left: 100px;
 }
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -89,6 +77,8 @@
 }
 
 .banner-img3 {
+  margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   width: 100%;
   & .banner3 {
@@ -123,13 +113,26 @@
   justify-content: space-evenly;
 }
 
+.container ul {
+  list-style-type: none;
+}
 
 // CSS index contacts
+
 .site-contact-container {
   justify-content: center;
   align-items: center;
   margin: 50px 100px;
+  & a {
+    text-decoration: none;
+    color: black
+  }
 }
+
+.site-contact-container a:hover {
+  text-decoration: underline;
+}
+
 
 .site-questions-container {
   margin-top: 30px;
